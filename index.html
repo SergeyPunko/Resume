@@ -4,6 +4,7 @@
 	<meta charset="UTF-8">
 	<title>Resume Sergey Punko</title>
 	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
 </head>
 <body>
 	<div id="avatar"></div>
@@ -12,6 +13,15 @@
 			<div class="icon">
 				<img src="img/logo.png" alt="sp">
 			</div>
+			<div class="asideref" id="fullmenu">
+				<ul>
+					<li><a href="#aboutme">About me</a></li>
+					<li><a href="#myskill">My skill</a></li>
+					<li><a href="#myprj">My project</a></li>
+					<li><a href="#mycourse">My courses</a></li>
+					<li><a href="#mycontacts">Contacts</a></li>
+				</ul>
+			</div>
 			<nav class="menu">
 				<div id="menu-btn">
 					<span class="burger"></span>
@@ -19,7 +29,7 @@
 			</nav>
 		</div>
 	</header>
-	<section class="about">
+	<section class="about" id="aboutme">
 		<div class="fullname">
 			<h1 class="fullnametext">Sergey Punko</h1>
 		</div>
@@ -33,7 +43,7 @@
 				Главный плюс - <span class="strong">желание</span> учиться!
 			</p>
 		</div>
-		<div class="skills">
+		<div class="skills" id="myskill">
 			<h2 class="titleskill">My <span class="strong">skills</span></h2>
 			<div class="skill">
 				<div class="lineskill">
@@ -72,14 +82,36 @@
 				<h2>CSS Grid</h2>
 			</div>
 		</div>
-		<div class="mywork">
-			<div class="ducatur">
-				<img src="" alt="">
-				<h2></h2>
+		<div class="mywork" id="myprj">
+			<h2>My <span class="strong">projects</span></h2>
+			<div class="project">
+				<a href="https://github.com/Ducatu/ducatu.github.io"><img src="img/ducatur.jpg" alt="ducatur"></a>
 			</div>
-			<div class="worker"></div>
+			<div class="project">
+				<img src="img/photo_2018-05-30_14-31-34.jpg" alt="Hazel">
+			</div>
 		</div>
+		<div class="mycourse" id="mycourse">
+			<h2>My <span class="strong">courses</span></h2>
+			<div class="course">
+				<h2><span class="strong">Glo Academy</span></h2>
+				<p>Окончил курс "Веб-разработчик", где поднял свой скил HTML/CSS</p>
+			</div>
+			<div class="course">
+				<h2><span class="strong">Область развития</span></h2>
+				<p>Курсы по JavaScript на которых выполняем проект на платформе Deployd с использованием MongoDB. Также на курсах изучаем React.js и сборщики(gulp, webpack). На данный момент там и обучаюсь параллельно с курсами от Rolling Scopes</p>
+			</div>
+		</div>
+		<footer id="mycontact">
+			<h2>Touch with me</h2>
+			<div class="social">
+				<a href="https://vk.com/punko__sergey"><i class="fab fa-vk"></i></a>
+				<a href="github.com/SergeyPunko"><i class="fab fa-github"></i></a>
+				<a href="punkosergey1997@gmail.com"><i class="fas fa-envelope-open"></i></a>
+			</div>
+		</footer>
 	</section>
+
 	<script src="js/script.js"></script>
 </body>
 </html>

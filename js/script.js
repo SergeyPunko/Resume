@@ -1,9 +1,15 @@
 let btn = document.getElementById("menu-btn");
 let ava = document.getElementById("avatar");
+let menu = document.getElementById("fullmenu");
 btn.addEventListener("click", function(){
 	if(btn.classList.contains('btn-active')){
 		btn.classList.remove('btn-active');
-	} else btn.classList.add("btn-active")
+		menu.style.display="none";
+
+	} else {
+		btn.classList.add("btn-active")
+		menu.style.display="block";
+	}
 })
 window.onscroll=function(){
 	if(window.pageYOffset>100){
